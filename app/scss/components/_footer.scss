@@ -1,0 +1,227 @@
+.footer-top {
+  min-height: auto;
+  background-image: url("../images/footer/footer_bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  &__inner {
+    padding: 120px 0 150px;
+    position: relative;
+  }
+  &__content {
+    max-width: 640px;
+  }
+  &__slogan {
+    max-width: 640px;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  &__span {
+    display: inline-block;
+    max-width: 320px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  &__images {
+    max-width: 555px;
+    min-height: 472px;
+    object-fit: cover;
+    position: absolute;
+    top: 55%;
+    right: 6%;
+    transform: translateY(-50%);
+  }
+}
+
+.form {
+  width: 420px;
+  &__label {
+    font-size: 0;
+    line-height: 0;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 68px;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    background-color: transparent;
+    padding: 0 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    &::placeholder {
+      @extend%opensans-400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid #ccc;
+    }
+  }
+  &__btn {
+    margin-top: 50px;
+  }
+}
+
+.footer-bootom {
+  &__inner {
+    display: flex;
+    padding: 60px 0;
+    justify-content: center;
+  }
+  &__menu {
+    max-width: 180px;
+    padding: 0 5px;
+  }
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__link {
+    padding: 10px;
+    @extend%opensans-400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #656565;
+    transition: color 0.4s;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &__contact {
+    max-width: 165px;
+    padding: 0 5px;
+    margin-left: 115px;
+  }
+  &__tel {
+    @extend%opensans-700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  &__span {
+    @extend%opensans-600;
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $accent;
+  }
+  &__info {
+    max-width: 225px;
+    padding: 0 5px;
+    margin-left: 105px;
+  }
+  &__agreement {
+    display: block;
+    @extend%opensans-400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #656565;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    transition: color 0.4s;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.social {
+  margin-left: 125px;
+  padding: 0 5px;
+  &__link {
+    display: inline-block;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &__svg {
+    width: 34px;
+    height: 34px;
+    color: $default;
+    transition: color 0.3s;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .footer-top__images {
+    max-width: 455px;
+    min-height: 372px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .footer-bootom__inner {
+    padding: 35px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bootom__menu {
+    margin-bottom: 15px;
+  }
+  .footer-bootom__contact {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .footer-bootom__info {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .social {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-top {
+    background-image: url("../images/section_1/bg_header.png");
+  }
+  .footer-top__content {
+    max-width: 100%;
+  }
+  .footer-top__images {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-top__inner {
+    padding: 60px 0 75px;
+  }
+  .footer-top__slogan {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .footer-top__span {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-top__inner {
+    padding: 35px 0 65px;
+  }
+  .form__btn {
+    margin-top: 25px;
+  }
+}

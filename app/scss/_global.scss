@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  @extend%сomfortaa-300;
+  font-size: 14px;
+  background-color: #f6edea;
+  color: #000;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .animate__animated {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

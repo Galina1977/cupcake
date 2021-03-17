@@ -1,0 +1,140 @@
+.team {
+  padding: 100px 0;
+  &__box {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    &::after {
+      transform: translateX(-27%);
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 370px;
+    min-height: auto;
+    text-align: center;
+    position: relative;
+  }
+  &__blackout {
+    position: relative;
+    &--1 {
+      &::before {
+        content: "";
+        width: 320px;
+        height: 320px;
+        background-color: #ff3a2d;
+        background-image: linear-gradient(-90deg, $title 125%);
+        border-radius: 50%;
+        position: absolute;
+        top: -112px;
+        left: -126px;
+        z-index: -50;
+      }
+    }
+    &--3 {
+      &::after {
+        content: "";
+        width: 167px;
+        height: 167px;
+        background-color: #ff3a2d;
+        background-image: linear-gradient(-90deg, $title 125%);
+        border-radius: 50%;
+        position: absolute;
+        right: -62px;
+        bottom: 19px;
+        z-index: -50;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 436px;
+    object-fit: cover;
+    border: 5px solid $accent;
+    border-radius: 10%;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    display: block;
+    @extend%сomfortaa-600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  &__name {
+    @extend%сomfortaa-600;
+    font-size: 20px;
+    line-height: 25px;
+    color: $accent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .team {
+    padding: 50px 20px;
+  }
+  .team__inner {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .team__box {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .team__item {
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .team {
+    padding: 30px 0 10px;
+  }
+  .team__item {
+    width: 270px;
+  }
+  .team__img {
+    height: 280px;
+    margin-bottom: 5px;
+  }
+  .team__text {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .team__blackout--1::before {
+    width: 220px;
+    height: 220px;
+    top: -40px;
+    left: -77px;
+  }
+  .team__blackout--3::after {
+    right: -30px;
+    bottom: -24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .team__blackout--1::before {
+    top: -50px;
+    left: -21px;
+  }
+  .team__blackout--3::after {
+    right: 4px;
+    bottom: 11px;
+  }
+}

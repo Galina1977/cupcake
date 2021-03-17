@@ -1,0 +1,23 @@
+.title {
+  @extend%сomfortaa-700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #000;
+  &__color {
+    color: $title;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
