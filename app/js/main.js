@@ -83,10 +83,10 @@ $(function () {
   });
 
   // Бургер меню
-  $(".visuallyHidden").on("click", function () {
-    $(".menu__list").toggleClass("menu__list--active");
+  $(".header-top__burger").click(function (event) {
+    $(".header-top__burger, .header-top__menu ").toggleClass("active");
+    $("body").toggleClass("lock");
   });
-
   // Подключили анимацию
   new WOW().init();
 

@@ -8,11 +8,20 @@ html {
   box-sizing: inherit;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   @extend%сomfortaa-300;
   font-size: 14px;
   background-color: #f6edea;
   color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -21,6 +30,18 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+button:focus {
+  outline-offset: 1px;
+  outline-color: $title;
+  outline-width: 1px;
+}
+
+a:focus {
+  outline-offset: 1px;
+  outline-color: $title;
+  outline-width: 1px;
 }
 
 @media (max-width: 768px) {

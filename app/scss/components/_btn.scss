@@ -1,54 +1,27 @@
 .btn {
-  display: inline-block;
-  vertical-align: baseline;
-  padding: 25px 75px;
+  padding: 25px 85px;
   @extend%opensans-600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   color: #fff;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
-  background-color: #fc5d5c;
+  background-color: $title;
   border-radius: 38px;
-  border: none;
   top: 0;
-  cursor: pointer;
   position: relative;
-  transition: all 0.5s;
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../images/section_1/cake_2.png");
-    background-repeat: no-repeat;
-    width: 83px;
-    height: 94px;
-    top: -30px;
-    right: -20px;
-  }
+  transition: background 0.6s, color 0.6s, top 0.6s;
   &:focus {
-    background-color: $title;
+    background-color: $accent;
   }
   &:hover {
     background-color: #fff;
     color: $accent;
     top: 2px;
   }
-}
-
-@media (max-width: 1200px) {
-  .btn {
-    font-size: 20px;
-    line-height: 25px;
-    z-index: 5;
-  }
-}
-@media (max-width: 384px) {
-  .btn {
-    width: 100%;
-    padding: 20px 65px;
-    &::after {
-      display: none;
-    }
+  &:active {
+    background-color: #cec6c6;
+    color: $accent;
   }
 }
