@@ -1,0 +1,55 @@
+@media (max-width: 1200px)
+@media (max-width: 992px)
+@media (max-width: 768px)
+@media (max-width: 576px)
+
+$default: #7b7b7b;
+
+$title: #1f2044;
+
+$bg: #fcd7b6;
+
+$accent: #fe3e57;
+
+
+@extend %checkbox-hidden; Прячем чекбокс
+
+@extend %btn;  Кнопка
+
+@extend%opensans-600;  Шрифт 
+@extend%сomfortaa-700; 
+
+body {
+  @extend%cambay-700;
+  color: $default;
+  font-size: 16px;
+}
+
+.......................
+
+background-image: url("../images/section_1/fruit.png");
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+...................
+
+
+<div class="wrapper">
+    <div class="content">
+      <div class="container"></div>
+    </div>
+  </div>
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content {
+  flex: 1 1 auto;
+}

@@ -1,6 +1,6 @@
 $(function () {
   // Скрипт плавного перехода к нужному блоку
-  $(".menu").on("click", "a", function (event) {
+  $(".header-top__menu").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr("href"),
       top = $(id).offset().top;
@@ -14,7 +14,7 @@ $(function () {
     $("body,html").animate({ scrollTop: top }, 1500);
   });
 
-  //Стрелка вверх-скролл
+  //scroller
   $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
@@ -34,15 +34,26 @@ $(function () {
     });
   });
 
-  // slider - cupcake;
-  $(".slider-cupcake").slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
+  // Табы
+  $(".tab").on("click", function (e) {
+    e.preventDefault();
+
+    $($(this).siblings()).removeClass("tab--active");
+    $($(this).closest(".tabs-wrapper").siblings().find("div")).removeClass(
+      "tabs-content--active"
+    );
+
+    $(this).addClass("tab--active");
+    $($(this).attr("href")).addClass("tabs-content--active");
+
+    $(".slick-slider").slick("setPosition");
+  });
+
+  //Слайдер
+  $(".carousel__inner").slick({
+    dots: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpead: 1500,
     prevArrow:
       '<img class="slider-arrows slider-arrows__left" src="images/section_2/arrow_left.png" alt="">',
     nextArrow:
@@ -58,15 +69,24 @@ $(function () {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+          dots: true,
         },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
+  });
+
+  //Кнопка Избранное-сердце
+  $(".carousel__favorite").on("click", function () {
+    $(this).toggleClass("carousel__favorite--active");
   });
 
   // Пупап Слайдер Галерея
