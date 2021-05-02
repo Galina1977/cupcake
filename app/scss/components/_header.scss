@@ -13,7 +13,8 @@
     z-index: 5;
   }
   &__img {
-    width: 100%;
+    max-width: 622px;
+    min-height: 576px;
     object-fit: cover;
   }
   &__content {
@@ -280,7 +281,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   .header {
     &__title {
       font-size: 38px;
@@ -292,8 +293,20 @@
       line-height: 30px;
       margin-bottom: 29px;
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
     &__text {
       margin-bottom: 33px;
+    }
+    &__btn {
+      width: 100%;
+      .btn {
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }

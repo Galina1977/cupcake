@@ -1,8 +1,8 @@
 .slider-presentation {
-  padding: 100px 0;
+  padding: 103px 0;
   &__box {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 80px;
   }
   &__title {
     margin-bottom: 12px;
@@ -32,6 +32,17 @@
     border-radius: 31.5px;
     & + & {
       margin-left: 22px;
+    }
+    transition: background 0.5s, color 0.5s;
+    &:focus {
+      background-color: $accent;
+      color: #fff;
+    }
+    &:hover {
+      color: #200303;
+    }
+    &:active {
+      color: #fff;
     }
   }
 }
@@ -64,7 +75,6 @@
     }
   }
   &__img {
-    max-width: 100%;
     width: 757px;
     height: 300px;
     object-fit: cover;
@@ -176,7 +186,7 @@
 
 @media (max-width: 768px) {
   .slider-presentation {
-    padding: 25px 0;
+    padding: 60px 0 30px 0;
   }
   .carousel .slick-dots {
     margin-top: 20px;

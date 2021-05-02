@@ -107,6 +107,13 @@ $(function () {
     $(".header-top__burger, .header-top__menu ").toggleClass("active");
     $("body").toggleClass("lock");
   });
+
+  // Показать ещё
+  $(".popup-cupcake__btn").on("click", function () {
+    $(this).toggleClass("popup-cupcake__btn--active");
+    $(this).next().slideToggle(500);
+  });
+
   // Подключили анимацию
   new WOW().init();
 

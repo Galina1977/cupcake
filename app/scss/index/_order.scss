@@ -22,13 +22,14 @@
     border: 1px solid #ccc;
     border-radius: 1px;
     position: relative;
-    &::before {
+    &::before,
+    &::after {
       content: "";
       background-image: url("../images/section_3/1.png");
-      background-position: top center;
-      background-repeat: no-repeat;
       width: 57px;
       height: 54px;
+      background-position: top center;
+      background-repeat: no-repeat;
       position: absolute;
       top: 0;
       left: 0;
@@ -36,11 +37,8 @@
     &::after {
       content: "";
       background-image: url("../images/section_3/icon_1.png");
-      background-position: top center;
-      background-repeat: no-repeat;
       width: 74px;
       height: 87px;
-      position: absolute;
       top: 20px;
       left: 90px;
     }
@@ -53,7 +51,6 @@
     z-index: 2;
   }
   &__caption {
-    display: block;
     @extend%сomfortaa-700;
     font-size: 20px;
     line-height: 25px;

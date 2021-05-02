@@ -1,5 +1,5 @@
 .footer-top {
-  min-height: auto;
+  min-height: 720px;
   background-image: url("../images/footer/footer_bg.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -27,13 +27,12 @@
     margin-bottom: 35px;
   }
   &__images {
-    max-width: 555px;
-    min-height: 472px;
+    max-width: 622px;
+    min-height: 576px;
     object-fit: cover;
     position: absolute;
-    top: 55%;
-    right: 6%;
-    transform: translateY(-50%);
+    top: 20%;
+    right: 0;
   }
 }
 
@@ -62,7 +61,7 @@
     }
     &:focus {
       outline: none;
-      border: 2px solid #ccc;
+      border: 2px solid $title;
     }
   }
   &__btn {
@@ -78,74 +77,79 @@
   }
   &__menu {
     max-width: 180px;
-    padding: 0 5px;
   }
   &__item {
-    margin-bottom: 10px;
+    & + & {
+      margin-top: 15px;
+    }
   }
   &__link {
-    padding: 10px;
     @extend%opensans-400;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 19px;
     color: #656565;
     transition: color 0.4s;
     &:hover {
       color: $accent;
     }
+    &:active {
+      color: #350404;
+    }
   }
   &__contact {
     max-width: 165px;
-    padding: 0 5px;
     margin-left: 115px;
   }
   &__tel {
     @extend%opensans-700;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 20px;
     color: #000;
-    margin-bottom: 15px;
-  }
-  &__span {
-    @extend%opensans-600;
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    color: $accent;
+    transition: color 0.6s;
+    span {
+      @extend%сomfortaa-600;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: underline;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    &:hover {
+      color: $accent;
+    }
+    &:active {
+      color: #350404;
+    }
   }
   &__info {
     max-width: 225px;
-    padding: 0 5px;
     margin-left: 105px;
   }
   &__agreement {
-    display: block;
     @extend%opensans-400;
     font-size: 14px;
     line-height: 18px;
     text-decoration: underline;
     color: #656565;
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
-    }
     transition: color 0.4s;
+    & + & {
+      margin-top: 10px;
+    }
     &:hover {
       color: $accent;
+    }
+    &:active {
+      color: #350404;
     }
   }
 }
 
 .social {
-  margin-left: 125px;
-  padding: 0 5px;
+  margin-left: 85px;
   &__link {
     display: inline-block;
-    margin-left: 10px;
-    &:first-child {
-      margin-left: 0;
+    & + & {
+      margin-left: 10px;
     }
   }
   &__svg {
@@ -156,54 +160,60 @@
     &:hover {
       color: $accent;
     }
+    &:active {
+      color: #350404;
+    }
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1480px) {
   .footer-top__images {
-    max-width: 455px;
-    min-height: 372px;
+    display: none;
   }
 }
 
 @media (max-width: 1040px) {
   .footer-bootom__inner {
+    text-align: left;
     padding: 35px 0;
     flex-direction: column;
     align-items: center;
   }
   .footer-bootom__menu {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .footer-bootom__contact {
     margin-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .footer-bootom__info {
     margin-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .social {
     margin-left: 0;
   }
 }
 
-@media (max-width: 992px) {
-  .footer-top {
-    background-image: url("../images/section_1/bg_header.png");
-  }
+@media (max-width: 768px) {
   .footer-top__content {
     max-width: 100%;
-  }
-  .footer-top__images {
-    display: none;
   }
   .form {
     width: 100%;
   }
+  .form__btn {
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 640px) {
+  .footer-top {
+    min-height: 601px;
+  }
   .footer-top__inner {
     padding: 60px 0 75px;
   }
@@ -218,10 +228,24 @@
 }
 
 @media (max-width: 360px) {
+  .footer-top {
+    min-height: 570px;
+  }
   .footer-top__inner {
     padding: 35px 0 65px;
   }
   .form__btn {
     margin-top: 25px;
+  }
+  .footer-bootom__menu {
+    margin-bottom: 25px;
+  }
+  .footer-bootom__contact {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .footer-bootom__info {
+    margin-left: 0;
+    margin-bottom: 25px;
   }
 }
