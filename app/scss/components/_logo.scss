@@ -1,0 +1,35 @@
+.logo {
+  flex: 0 0 100px;
+  max-width: 100px;
+  max-height: 100px;
+  outline: none;
+  cursor: default;
+  &__img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 40px 0 40px 0;
+  }
+}
+
+.logo-mobile {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .logo {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}

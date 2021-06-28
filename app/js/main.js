@@ -1,5 +1,4 @@
 $(function () {
-  // Скрипт плавного перехода к нужному блоку
   $(".header-top__menu").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr("href"),
@@ -14,7 +13,11 @@ $(function () {
     $("body,html").animate({ scrollTop: top }, 1500);
   });
 
-  //scroller
+  $(".header-top__burger").click(function (event) {
+    $(".header-top__burger, .header-top__menu ").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+
   $(document).ready(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
@@ -34,7 +37,6 @@ $(function () {
     });
   });
 
-  // Табы
   $(".tab").on("click", function (e) {
     e.preventDefault();
 
@@ -49,11 +51,11 @@ $(function () {
     $(".slick-slider").slick("setPosition");
   });
 
-  //Слайдер
   $(".carousel__inner").slick({
     dots: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
     prevArrow:
       '<img class="slider-arrows slider-arrows__left" src="images/section_2/arrow_left.png" alt="">',
     nextArrow:
@@ -84,13 +86,7 @@ $(function () {
     ],
   });
 
-  //Кнопка Избранное-сердце
-  $(".carousel__favorite").on("click", function () {
-    $(this).toggleClass("carousel__favorite--active");
-  });
-
-  // Пупап Слайдер Галерея
-  $(".popup-cupcake__gallery").magnificPopup({
+  $(".popup-cupcake__item").magnificPopup({
     delegate: "a",
     type: "image",
     tloading: "loading image #%curr%...",
@@ -102,23 +98,10 @@ $(function () {
     },
   });
 
-  // Бургер меню
-  $(".header-top__burger").click(function (event) {
-    $(".header-top__burger, .header-top__menu ").toggleClass("active");
-    $("body").toggleClass("lock");
-  });
-
-  // Показать ещё
   $(".popup-cupcake__btn").on("click", function () {
     $(this).toggleClass("popup-cupcake__btn--active");
     $(this).next().slideToggle(500);
   });
 
-  // Подключили анимацию
   new WOW().init();
-
-  // Отключили анимацию
-  var wow = new WOW({
-    mobile: false,
-  });
 });

@@ -3,6 +3,7 @@
   @extend%opensans-600;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   color: #fff;
@@ -21,7 +22,7 @@
     top: 2px;
   }
   &:active {
-    background-color: #cec6c6;
+    background-color: #ccc;
     color: $accent;
   }
 }

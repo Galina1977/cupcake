@@ -4,15 +4,18 @@
 @import "libs";
 @import "global";
 
-@import "components/_header";
-@import "components/_footer";
-@import "components/_title";
-@import "components/_subtitle";
-@import "components/_btn";
+@import "components/header";
 @import "components/scroller";
+@import "components/logo";
+@import "components/title";
+@import "components/subtitle";
+@import "components/btn";
+@import "components/footer";
 
-@import "index/_slider-presentation";
-@import "index/_order";
-@import "index/_popup-cupcake";
-@import "index/_team";
-@import "index/_video-cupcake";
+@import "index/slider-presentation";
+@import "index/products";
+@import "index/carousel";
+@import "index/order";
+@import "index/popup-cupcake";
+@import "index/team";
+@import "index/video-cupcake";
