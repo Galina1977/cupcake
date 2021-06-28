@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="pobots" content="none">
+  <meta name="Author" content="Galina Pener">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Капкейк</title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header" style="background-image: url(images/section_1/header.png);">
+    <div class="header__img-box">
+      <img class="header__img animate__animated animate__zoomIn" src="images/section_1/cupcake.png" title="Картинка капкейка" alt="Картинка капкейка">
+    </div>
+    <a class="scroller" id="scroller" href="#">
+      <svg class="scroller__arrow">
+        <use xlink:href="images/icon/arrow.svg#arrow"></use>
+      </svg>
+    </a>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__inner">
+          <a class="header-top__logo logo" id="logo" href="#">
+            <img class="logo__img" src="images/section_1/logo_21.png" title="Логотип" alt="Логотип">
+          </a>
+          <div class="header-top__box-mobile">
+            <a class="header-top__tel-mobile" href="tel:+79992341234">
+              <svg class="header-top__tel-svg">
+                <use xlink:href="images/icon/phone.svg#phone"></use>
+              </svg>
+            </a>
+            <button class="header-top__burger" type="button">
+              <span></span>
+            </button>
+          </div>
+          <nav class="header-top__menu">
+            <ul class="header-top__list">
+              <li class="header-top__item">
+                <a class="header-top__link" href="#slider-presentation">Наши капкейки</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#team">Команда</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#popup-cupcake">Фото</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#order">Как сделать заказ?</a>
+              </li>
+              <li class="header-top__item">
+                <a class="header-top__link" href="#footer-top">Контакты</a>
+              </li>
+              <a class="logo logo-mobile" id="logo" href="#">
+                <img class="logo__img" src="images/section_1/logo_21.png" title="Логотип" alt="Логотип">
+              </a>
+            </ul>
+          </nav>
+          <a class="header-top__tel" href="tel:+79992341234">+7-999-234-12-34
+            <span class="header-top__desc">Звоните круглосуточно</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="container">
+        <div class="header-content__inner">
+          <div class="header-content__title">Выбери свой капкейк</div>
+          <div class="header-content__subtitle">с вкуснейшей начинкой</div>
+          <p class="header-content__text">
+            Капкейки — вкусная, ароматная и удобная выпечка. Капкейки выпекают в бумажных формочках. Капкейки можно купить в кондитерской. Мы предпочитаем готовить Капкейки дома — домашняя выпечка, приготовленная с любовью, всегда вкуснее! Капкейк, приготовленный в домашних условиях, — вкусный кексик который очень любят дети. Предлагаем рецепт очень вкусных домашних капкейков.
+          </p>
+          <div class="header-content__btn">
+            <button class="btn" type="button">Хочу такой</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!--  -->
+    <div class="slider-presentation" id="slider-presentation">
+      <div class="container">
+        <div class="slider-presentation__box">
+          <div class="slider-presentation__title title ">Все наши <span class="title__color">капкейки</span></div>
+          <p class="slider-presentation__subtitle subtitle">начинка на любой вкус</p>
+        </div>
+        <div class="products">
+          <div class="container">
+            <div class="products__inner">
+              <div class="tabs products__tabs tabs-wrapper">
+                <div class="mobile-overflow">
+                  <a class="tab tab--active products__tab" href="#products-tab-1">фруктовые</a>
+                  <a class="tab products__tab" href="#products-tab-2">шоколадные</a>
+                  <a class="tab products__tab" href="#products-tab-3">ванильные</a>
+                  <a class="tab products__tab" href="#products-tab-4">с топпером</a>
+                </div>
+              </div>
+              <div class="tabs-container products__container">
+                <div id="products-tab-1" class="products__content tabs-content tabs-content--active">
+                  <div class="carousel">
+                    <div class="container">
+                      <div class="carousel__inner">
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/1.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/2.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/4.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/3.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/1.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/2.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/4.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/3.jpg" alt="Капкейк фруктовый">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“фруктовый”</span></p>
+                            <span class="carousel__prise">45 грамм</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="products-tab-2" class="products__content tabs-content">
+                  <div class="carousel">
+                    <div class="container">
+                      <div class="carousel__inner">
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/01.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/04.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/02.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/03.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/01.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/04.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/02.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/03.jpg" alt="Капкейк шоколадный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“шоколадный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="products-tab-3" class="products__content tabs-content">
+                  <div class="carousel">
+                    <div class="container">
+                      <div class="carousel__inner">
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/10.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/11.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/12.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/13.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/10.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/11.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/12.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/13.jpg" alt="Капкейк ванильный">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“ванильный”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="products-tab-4" class="products__content tabs-content">
+                  <div class="carousel">
+                    <div class="container">
+                      <div class="carousel__inner">
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/20.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/21.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/22.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/23.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/20.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/21.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/22.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="carousel__box">
+                            <img class="carousel__img" src="images/section_2/23.jpg" alt="Капкейк с топпером">
+                            <p class="carousel__title">Капкейк<span class="carousel__span">“с топпером”</span></p>
+                            <span class="carousel__prise">50 грамм</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="team" id="team">
+      <div class="container">
+        <div class="team__box">
+          <div class="team__title title">У нас отличная <span class="title__color"> команда</span></div>
+          <p class="team__subtitle subtitle">знакомьтесь</p>
+        </div>
+        <div class="team__inner">
+          <div class="team__item">
+            <img class="team__img" src="images/section_4/2.jpg" alt="Кондитер Лисова Елена">
+            <span class="team__text">Кондитер</span>
+            <span class="team__name">Лисова Елена</span>
+          </div>
+          <div class="team__item">
+            <img class="team__img" src="images/section_4/1.jpg" alt="Шеф-кондитер Еремеева Вера">
+            <span class="team__text">Шеф-кондитер</span>
+            <span class="team__name">Еремеева Вера</span>
+          </div>
+          <div class="team__item">
+            <img class="team__img" src="images/section_4/3.jpg" alt="Кондитер Михалев Константин">
+            <span class="team__text">Кондитер</span>
+            <span class="team__name">Михалев Константин</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="video-cupcake">
+      <div class="video-cupcake__item" style="background-image: url(images/section_4/01.jpg);">
+        <a class="video-cupcake__play " data-fancybox href="https://www.youtube.com/watch?v=uWj6BC0IV-Q"></a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="popup-cupcake" id="popup-cupcake">
+      <div class="container">
+        <div class="popup-cupcake__box">
+          <div class="popup-cupcake__title title">Посмотрите фото <span class="title__color"> капкейков</span></div>
+          <p class="popup-cupcake__subtitle subtitle">все сразу в одном месте</p>
+        </div>
+        <div class="popup-cupcake__gallery">
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/1.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/1.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/2.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/2.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/01.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/01.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/02.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/02.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/10.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/10.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/11.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/11.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/20.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/20.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="popup-cupcake__item">
+            <img class="popup-cupcake__images" src="images/section_2/22.jpg" alt="Капкейк">
+            <div class="popup-cupcake__cover">
+              <a class="popup-cupcake__link" href="images/section_2/22.jpg">
+                <span class="popup-cupcake__span">
+                  <svg class="popup-cupcake__plus-solid">
+                    <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="popup-cupcake__more">
+          <button class="popup-cupcake__btn" type="button">Показать ещё</button>
+          <div class="popup-cupcake__content">
+            <div class="popup-cupcake__content-img">
+              <div class="popup-cupcake__gallery">
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/1.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/1.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/2.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/2.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/01.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/01.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/02.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/02.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/10.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/10.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/11.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/11.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/20.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/20.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="popup-cupcake__item">
+                  <img class="popup-cupcake__images" src="images/section_2/22.jpg" alt="Капкейк">
+                  <div class="popup-cupcake__cover">
+                    <a class="popup-cupcake__link" href="images/section_2/22.jpg">
+                      <span class="popup-cupcake__span">
+                        <svg class="popup-cupcake__plus-solid">
+                          <use xlink:href="images/icon/plus-solid.svg#plus-solid"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="order" id="order">
+      <div class="container">
+        <div class="order__box">
+          <div class="order__title title">Как сделать <span class="title__color">заказ?</span></div>
+          <p class="order__subtitle subtitle">доставим, как можно скорее</p>
+        </div>
+        <div class="order__inner">
+          <div class="order__item animate__animated wow animate__backInLeft animate__slower" data-wow-offset="200" data-wow-duration="0.9s">
+            <div class="order__info">
+              <span class="order__caption">Утверждаем заказ</span>
+              <span class="order__text">
+                Принимаем заказ и перезваниваем Вам для уточнения деталей
+              </span>
+            </div>
+          </div>
+          <div class="order__item order__item--2 nimate__animated wow animate__backInLeft animate__slower" data-wow-offset="200" data-wow-duration="0.7s">
+            <div class="order__info">
+              <span class="order__caption">Готовим капкейки</span>
+              <span class="order__text">
+                Готовим вкуснейшие капкейки по выбранному Вами меню
+              </span>
+            </div>
+          </div>
+          <div class="order__item order__item--3 animate__animated wow animate__backInRight animate__slower" data-wow-offset="200" data-wow-duration="0.7s">
+            <div class="order__info">
+              <span class="order__caption">Отправляем</span>
+              <span class="order__text">
+                Отправляем Ваш заказ почтой России или курьером прям к Вашему дому
+              </span>
+            </div>
+          </div>
+          <div class="order__item order__item--4 animate__animated wow animate__backInRight animate__slower" data-wow-offset="200" data-wow-duration="0.9s">
+            <div class="order__info">
+              <span class="order__caption">Получение заказа</span>
+              <span class="order__text">
+                Вам придёт смс уведомление на телефон или курьер перезвонит Вам
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-top" id="footer-top">
+      <div class="container">
+        <div class="footer-top__inner">
+          <div class="footer-top__content">
+            <div class="footer-top__slogan">
+              Закажите капкейки у нас на сайте
+              и мы перезвоним Вам в течении 5 минут
+            </div>
+            <span class="footer-top__span">Для заказа заполните форму</span>
+            <form class="form" action="#" autocomplete="on">
+              <label class="form__label">Ваше имя</label>
+              <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+              <label class="form__label">Ваш телефон</label>
+              <input class="form__input" type="tel" name="tel" placeholder="Ваш телефон" required>
+              <div class="form__btn">
+                <button class="btn" type="submit">Хочу такой</button>
+              </div>
+            </form>
+            <img class="footer-top__images animate__animated wow animate__zoomIn" data-wow-offset="100" src="images/section_1/cupcake.png" title="Картинка капкейка" alt="Картинка капкейка">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bootom">
+      <div class="container">
+        <div class="footer-bootom__inner">
+          <nav class="footer-bootom__menu">
+            <ul class="footer-bootom__list">
+              <li class="footer-bootom__item">
+                <a class="footer-bootom__link" href="#logo">Домашние капкейки</a>
+              </li>
+              <li class="footer-bootom__item">
+                <a class="footer-bootom__link" href="#order">
+                  Как сделать заказ?</a>
+              </li>
+              <li class="footer-bootom__item">
+                <a class="footer-bootom__link" href="#popup-cupcake">Фото</a>
+              </li>
+              <li class="footer-bootom__item">
+                <a class="footer-bootom__link" href="#footer-top">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-bootom__contact">
+            <a class="footer-bootom__tel" href="tel:+79992341234">+7-999-234-12-34
+              <span>Заказать звонок</span>
+            </a>
+          </div>
+          <div class="footer-bootom__info">
+            <a class="footer-bootom__agreement" href="#!">Пользовательское соглашение </a>
+            <a class="footer-bootom__agreement" href="#!">Политика конфидициальности</a>
+          </div>
+          <div class="social">
+            <a class="social__link" href="#!">
+              <svg class="social__svg">
+                <use xlink:href="images/icon/instagram.svg#instagram"></use>
+              </svg>
+            </a>
+            <a class="social__link" href="#!">
+              <svg class="social__svg">
+                <use xlink:href="images/icon/vk.svg#vk"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ©Верстка сделана Пенер Галиной 20 февраля 2021 года -->
+  <!-- email: galyapener@mail.ru -->
+  <!--  -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
