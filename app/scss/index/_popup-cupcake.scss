@@ -1,152 +1,116 @@
 .popup-cupcake {
-  padding: 55px 0;
-  &__box {
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  &__title {
-    margin-bottom: 10px;
-  }
-  &__gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    min-height: auto;
-  }
-  &__item {
-    position: relative;
-  }
-  &__images {
-    width: 600px;
-    height: 300px;
-    object-fit: cover;
-    cursor: pointer;
-  }
-  &__cover {
-    opacity: 0;
-    background-color: rgba(#fa7c7c, 0.75);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: all 0.5s;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  &__link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  &__plus-solid {
-    width: 45px;
-    height: 45px;
-    fill: #fff;
-  }
-  &__more {
-    text-align: center;
-    margin-top: 25px;
-  }
-  &__btn {
-    @extend%сomfortaa-700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #fa7c7c;
-    transition: color 0.5s, border 0.5s;
-    position: relative;
-    &::after {
-      content: "";
-      background-image: url("../images/section_2/angle_bottom .svg");
-      background-repeat: no-repeat;
-      width: 12px;
-      height: 8px;
+   padding: 55px 0;
+   &__box {
+      text-align: center;
+      margin-bottom: 80px;
+   }
+   &__title {
+      margin-bottom: 10px;
+   }
+   &__gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+      min-height: auto;
+   }
+   &__item {
+      position: relative;
+   }
+   &__images {
+      width: 600px;
+      height: 300px;
+      object-fit: cover;
+      cursor: pointer;
+   }
+   &__cover {
+      opacity: 0;
+      background-color: rgba(#fa7c7c, 0.75);
       position: absolute;
-      right: -16px;
-      top: 12px;
-      transition: transform 0.1s;
-    }
-    &:hover {
-      color: #fc0707;
-    }
-    &:active {
-      color: #1f0202;
-    }
-    &.popup-cupcake__btn--active::after {
-      transform: rotate(180deg);
-    }
-  }
-  &__content {
-    display: none;
-    margin-top: 30px;
-  }
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      transition: all 0.5s;
+      &:hover {
+         opacity: 1;
+      }
+   }
+   &__link {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &__plus-solid {
+      width: 45px;
+      height: 45px;
+      fill: #fff;
+   }
 }
 
 img.mfp-img {
-  width: 965px;
-  height: 930px;
-  object-fit: cover;
+   width: 965px;
+   height: 930px;
+   object-fit: cover;
 }
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: pointer;
+   cursor: pointer;
 }
 .mfp-counter {
-  font-size: 0;
-  line-height: 0;
+   font-size: 0;
+   line-height: 0;
 }
 
 .mfp-container {
-  background-color: rgba(#000, 0.85);
+   background-color: rgba(#000, 0.85);
 }
 
 @media (max-width: 1200px) {
-  .popup-cupcake__gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-  }
+   .popup-cupcake__gallery {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 25px;
+   }
 }
 
 @media (max-width: 992px) {
-  .popup-cupcake__gallery {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-  }
+   .popup-cupcake__gallery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+   }
 }
 
 @media (max-width: 768px) {
-  img.mfp-img {
-    height: 730px;
-  }
+   img.mfp-img {
+      height: 730px;
+   }
 }
 
 @media (max-width: 576px) {
-  .popup-cupcake {
-    padding: 25px 0;
-  }
-  .popup-cupcake__box {
-    margin-bottom: 40px;
-  }
-  .popup-cupcake__gallery {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
+   .popup-cupcake {
+      padding: 25px 0;
+   }
+   .popup-cupcake__box {
+      margin-bottom: 40px;
+   }
+   .popup-cupcake__gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 10px;
+   }
 
-  .popup-cupcake__images {
-    height: auto;
-  }
-  img.mfp-img {
-    height: 540px;
-  }
+   .popup-cupcake__images {
+      height: auto;
+   }
+   img.mfp-img {
+      height: 540px;
+   }
 }
 
 @media (max-width: 360px) {
-  img.mfp-img {
-    height: 340px;
-  }
+   img.mfp-img {
+      height: 340px;
+   }
 }
